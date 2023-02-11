@@ -17,10 +17,10 @@ class SiteController extends Controller
     {
         // $sites = Site::get();
         // $categories = Category::get(); 
-        $data2 = Site::join('Categories', 'Sites.Category', '=', 'Categories.id')
+        $resultCategories = Site::join('Categories', 'Sites.Category', '=', 'Categories.id')
                ->get(['Sites.*', 'Categories.name as cname']);
         $data = [
-            'site' => $data2
+            'site' => $resultCategories
         ];
         return view('sites.index', $data);
     }
