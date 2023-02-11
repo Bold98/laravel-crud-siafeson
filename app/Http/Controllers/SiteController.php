@@ -112,6 +112,8 @@ class SiteController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Site::find($id);
+        $data->delete();
+        return to_route('sites.index')->with('status', '¡Sitio Eliminado!');
     }
 }
