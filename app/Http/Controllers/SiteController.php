@@ -14,6 +14,11 @@ class SiteController extends Controller
         return Site::get();
     }
 
+    public static function get_sites_categories(){
+        $sites_and_gategories = Site::join('Categories', 'Sites.Category', '=', 'Categories.id')->get(['Sites.*', 'Categories.name as cname']);
+        return $sites_and_gategories;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -21,13 +26,7 @@ class SiteController extends Controller
      */
     public function index()
     {
-        // $sites = Site::get();
-        // $categories = Category::get(); 
-        $resultCategories = Site::join('Categories', 'Sites.Category', '=', 'Categories.id')->get(['Sites.*', 'Categories.name as cname']);
-        $data = [
-            'site' => $resultCategories
-        ];
-        return view('sites.index', $data);
+        return view('sites.index', ['site' => SiteController::get_sites_categories()]);
     }
 
     /**
