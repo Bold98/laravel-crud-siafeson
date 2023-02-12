@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('inicio');
 Route::view('conocenos', 'conocenos')->name('conocenos');
-Route::view('enlaces', 'enlaces')->name('enlaces');
 
 Route::resource('sites', SiteController::class,[
     'names' => 'sites',

@@ -10,7 +10,7 @@
             <a class="nav-link" href="#">Conocenos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Enlaces</a>
+            <a class="nav-link" href="{{ route('sites.index') }}">Enlaces</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Formatos</a>
