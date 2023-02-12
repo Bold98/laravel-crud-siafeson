@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Site;
-use App\Models\Category;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
@@ -17,8 +17,7 @@ class SiteController extends Controller
     {
         // $sites = Site::get();
         // $categories = Category::get(); 
-        $resultCategories = Site::join('Categories', 'Sites.Category', '=', 'Categories.id')
-               ->get(['Sites.*', 'Categories.name as cname']);
+        $resultCategories = Site::join('Categories', 'Sites.Category', '=', 'Categories.id')->get(['Sites.*', 'Categories.name as cname']);
         $data = [
             'site' => $resultCategories
         ];
@@ -32,7 +31,7 @@ class SiteController extends Controller
      */
     public function create()
     {
-        $categories = Category::get();
+        $categories = CategoryController::get_categories();
         $data = [
             'site' => new Site(),
             'categories' => $categories
@@ -79,7 +78,7 @@ class SiteController extends Controller
     public function edit($id)
     {
         $data = Site::find($id);
-        $categories = Category::get();
+        $categories = CategoryController::get_categories();
         return view('sites.edit', ['site' => $data, 'categories' => $categories]);
     }
 

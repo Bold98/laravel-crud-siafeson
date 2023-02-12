@@ -10,7 +10,7 @@
             <a class="nav-link" href="#">Conocenos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('sites.index') }}">Enlaces</a>
+            <a class="nav-link" href="#">Enlaces</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Formatos</a>
@@ -40,7 +40,7 @@
               <li>
                 <hr class="dropdown-divider" />
               </li>
-              <li><a class="dropdown-item" href="#">Item</a></li>
+              <li><a class="dropdown-item" href="{{ route('sites.index') }}">Administracion</a></li>
             </ul>
           </li>
         </ul>
