@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <x-layouts.navbar/>
+    <x-navbar/>
     @if (session('status'))
         <div>
             {{ session('status') }}

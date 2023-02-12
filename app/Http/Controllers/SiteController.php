@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 
 class SiteController extends Controller
 {
+
+    public static function get_sites()
+    {
+        return Site::get();
+    }
+
     /**
      * Display a listing of the resource.
      *
