@@ -1,21 +1,30 @@
 .carousel-item {
-    
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  
-  .my-nav {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    background-color: #2125295e;
-    transition: background-color 500ms linear;
-  }
-  
-  .my-nav.scroll {
-    background-color: #212529f5 !important;
-    transition: background-color 500ms linear;
-  }
+
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.my-nav {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #2125295e;
+  transition: background-color 500ms linear;
+}
+
+.my-nav.scroll {
+  background-color: #212529f5 !important;
+  transition: background-color 500ms linear;
+}
+
+.card {
+  transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb), .15) !important
+}
