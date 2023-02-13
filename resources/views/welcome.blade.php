@@ -32,30 +32,33 @@
     <x-layouts.sites-container categoryName="Productos Sonora">
         @foreach ($sites_and_gategories as $site)
             @if ($site->category == 1)
-                <x-layouts.sites-card 
-                siteUrl="{{ $site->imageUrl }}" 
+                <x-layouts.sites-card
+                siteUrl="{{$site->url}}" 
+                siteImageUrl="{{ $site->imageUrl }}" 
                 siteName="{{ $site->name }}"
-                    siteDescription="{{ $site->description }}" />
+                siteDescription="{{ $site->description }}" />
             @endif
         @endforeach
     </x-layouts.sites-container>
     <x-layouts.sites-container categoryName="Productos Nacional">
         @foreach ($sites_and_gategories as $site)
             @if ($site->category == 2)
-                <x-layouts.sites-card 
-                siteUrl="{{ $site->imageUrl }}" 
+                <x-layouts.sites-card
+                siteUrl="{{$site->url}}" 
+                siteImageUrl="{{ $site->imageUrl }}" 
                 siteName="{{ $site->name }}"
-                    siteDescription="{{ $site->description }}" />
+                siteDescription="{{ $site->description }}" />
             @endif
         @endforeach
     </x-layouts.sites-container>
     <x-layouts.sites-container categoryName="Otros Productos">
         @foreach ($sites_and_gategories as $site)
             @if ($site->category == 3)
-                <x-layouts.sites-card 
-                siteUrl="{{ $site->imageUrl }}" 
+                <x-layouts.sites-card
+                siteUrl="{{$site->url}}" 
+                siteImageUrl="{{ $site->imageUrl }}" 
                 siteName="{{ $site->name }}"
-                    siteDescription="{{ $site->description }}" />
+                siteDescription="{{ $site->description }}" />
             @endif
         @endforeach
     </x-layouts.sites-container>
