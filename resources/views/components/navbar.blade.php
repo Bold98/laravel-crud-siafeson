@@ -1,6 +1,8 @@
 <nav id="nav" class="my-nav navbar navbar-fixed-top navbar-light navbar-expand-lg ">
     <div class="container">
-        <a href="/" class="navbar-brand d-flex w-50 me-auto">Logo Siafeson</a>
+        <a href="/" class="navbar-brand d-flex w-50 me-auto">
+            <img src="http://siafeson.com/assets/customs/siafeson/img/sia_logo2.png" alt="Logo Siafeson">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,7 +38,8 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarScrollingDropdown">
                         @foreach ($sites as $site)
-                            <li><a target="_blank" class="dropdown-item" href="{{ $site->url }}">{{ $site->name }}</a></li>
+                            <li><a target="_blank" class="dropdown-item"
+                                    href="{{ $site->url }}">{{ $site->name }}</a></li>
                         @endforeach
                         <li>
                             <hr class="dropdown-divider" />
