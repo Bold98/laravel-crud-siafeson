@@ -15,8 +15,8 @@ class SiteController extends Controller
     }
 
     public static function get_sites_categories(){
-        $sites_and_gategories = Site::join('Categories', 'Sites.Category', '=', 'Categories.id')->get(['Sites.*', 'Categories.name as cname']);
-        return $sites_and_gategories;
+        $result = Site::join('Categories', 'Sites.Category', '=', 'Categories.id')->get(['Sites.*', 'Categories.name as cname']);
+        return ['sites_and_gategories' => $result];
     }
 
     /**
@@ -26,7 +26,7 @@ class SiteController extends Controller
      */
     public function index()
     {
-        return view('sites.index', ['site' => SiteController::get_sites_categories()]);
+        return view('sites.index', SiteController::get_sites_categories());
     }
 
     /**

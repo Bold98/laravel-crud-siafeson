@@ -25,6 +25,6 @@ class Navbar extends Component
     public function render()
     {
         $sites = SiteController::get_sites();
-        return view('components.navbar')->with('sites',json_decode($sites));
+        return view('components.navbar')->with('sites',$sites);
     }
 }

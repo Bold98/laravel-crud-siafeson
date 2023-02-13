@@ -17,7 +17,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($site as $site)
+                @foreach ($sites_and_gategories as $site)
                     <tr>
                         <th scope="row">{{ $site->id }}</th>
                         <td>{{ $site->name }}</td>
