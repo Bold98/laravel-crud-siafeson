@@ -1,4 +1,4 @@
-<x-layouts.app title="Sitios" meta-description="Sitios de Siafeson">
+<x-layouts.app title="Sitios" meta-description="Administración de los sitios de Siafeson">
     <div class="container sites-container container-md mb-4">
         <div class="mb-2">
             <a href="{{ route('sites.create') }}">
