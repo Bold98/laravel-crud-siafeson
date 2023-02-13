@@ -15,7 +15,7 @@ class SiteController extends Controller
     }
 
     public static function get_sites_categories(){
-        $result = Site::join('categories', 'cites.Category', '=', 'categories.id')->get(['cites.*', 'categories.name as cname']);
+        $result = Site::join('categories', 'sites.Category', '=', 'categories.id')->get(['sites.*', 'categories.name as cname']);
         return ['sites_and_gategories' => $result];
     }
 
