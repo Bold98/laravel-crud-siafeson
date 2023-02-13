@@ -8,7 +8,7 @@
                     @csrf @method('PATCH')
                     @include('sites.form')
                     <div class="input-group mb-3">
-                        <label class="input-group-text" for="category">Categoria</label>
+                        <label class="input-group-text" for="category">Categoría</label>
                         <select name="category" class="form-select" id="category" required>
                             @foreach ($categories as $category)
                                 @if ($site->category != $category->id)

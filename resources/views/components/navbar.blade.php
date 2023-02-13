@@ -12,19 +12,19 @@
                     <a class="nav-link" href="{{route('inicio')}}">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Conocenos</a>
+                    <a class="nav-link" href="{{route('conocenos')}}">Conócenos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Enlaces</a>
+                    <a class="nav-link disabled" href="#">Enlaces</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Formatos</a>
+                    <a class="nav-link disabled" href="#">Formatos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Apks</a>
+                    <a class="nav-link disabled" href="#">Apks</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Manuales</a>
+                    <a class="nav-link disabled" href="#">Manuales</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav ms-auto w-100 justify-content-end">

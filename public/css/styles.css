@@ -36,6 +36,10 @@
   margin-top: 100px;
 }
 
+.about-section{
+  background: #DDDCE2 url(http://siafeson.com/assets/customs/siafeson/img/body_bg.jpg) repeat left top;
+}
+
 @media (max-width: 768px) {
   .my-nav{
     position:unset;
