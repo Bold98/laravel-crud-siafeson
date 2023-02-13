@@ -6,8 +6,6 @@
                 aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -15,11 +13,7 @@
                     alt="..." />
             </div>
             <div class="carousel-item">
-                <img src="https://www.siafeson.com/assets/customs/siafeson/img/trigo.png" class="d-block w-100"
-                    alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="https://www.siafeson.com/assets/customs/siafeson/img/trigo.png" class="d-block w-100"
+                <img src="http://siafeson.com/assets/customs/siafeson/img/plantas.png" class="d-block w-100"
                     alt="..." />
             </div>
         </div>

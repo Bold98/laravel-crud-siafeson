@@ -105,7 +105,7 @@ class SiteController extends Controller
         ]);
         $data = Site::find($id);
         $data->update($validated);
-        return to_route('sites.index')->with('status', '¡Post Actualizado!');
+        return to_route('sites.index')->with('status', '¡Sitio Actualizado!');
     }
 
     /**

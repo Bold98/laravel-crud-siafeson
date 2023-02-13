@@ -1,8 +1,8 @@
 <x-layouts.app :title="$site->name" meta-description="Sitios de Siafeson">
-    <div class="container mt-3">
-        <a href="{{ route('sites.index') }}"><button class="btn mb-2 btn-outline-secondary">Regresar</button></a>
-        <div class="card p-4">
+    <div class="container sites-container container-md mt-auto mb-3">
+        <div class="card p-4 mt-3">
             <h5 class="card-title">Editar información de un sitio</h5>
+            <hr class="table-group-divider">
             <div class="card-body">
                 <form action="{{ route('sites.update', $site) }}" method="post">
                     @csrf @method('PATCH')
@@ -25,10 +25,12 @@
                             </div>
                         @enderror
                     </div>
+                    
                     <div class="row justify-content-end float-end">
-                        <button type="submit" class="btn btn-outline-info ">Editar</button>
+                        <button type="submit" class="btn btn-outline-info ">Guardar</button>
                     </div>
                 </form>
+                <a href="{{ route('sites.index') }}"><button class="btn mb-2 btn-outline-secondary">Regresar</button></a>
             </div>
         </div>
     </div>

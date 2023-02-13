@@ -1,5 +1,5 @@
 <div class="col">
-    <div class="card h-100">
+    <div class="card scale-card h-100">
         <img src="{{$siteUrl ?? 'https://www.siafeson.com/assets/customs/siafeson/img/sitios/simgbn.png'}}"
             class="card-img-top" alt="..." />
         <div class="card-body">
