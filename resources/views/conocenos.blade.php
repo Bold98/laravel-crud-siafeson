@@ -63,7 +63,7 @@
             <h3>Equipo</h3>
         </div>
         <hr class="group-divider" />
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 team-section">
+        <div class="row row-cols-md-2 justify-content-md-center team-section">
             <x-layouts.member-card 
                 memberImage="http://siafeson.com/assets/customs/siafeson/img/personal/hombre.png"
                 memberName="Alejandro Jiménez Lagunes" 
