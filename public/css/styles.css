@@ -40,8 +40,24 @@
   background: #DDDCE2 url(http://siafeson.com/assets/customs/siafeson/img/body_bg.jpg) repeat left top;
 }
 
+.dataTable-container{
+  overflow-x: scroll;
+}
+
+.team-image{
+  max-width: 250px;
+}
+
+.team-section{
+  justify-content: center;
+  transition: .3;
+}
+
 @media (max-width: 768px) {
   .my-nav{
     position:unset;
+  }
+  .team-image{
+    max-width: 300px;
   }
 }

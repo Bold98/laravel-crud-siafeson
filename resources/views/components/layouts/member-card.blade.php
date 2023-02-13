@@ -1,4 +1,4 @@
-<div class="col p-3">
+<div class="col p-3 team-image">
     <div class="card border-0">
         <img src="{{$memberImage}}" class="card-img-top" width="500" alt="...">
         <div class="card-body text-center">
